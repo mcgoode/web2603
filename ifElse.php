@@ -59,9 +59,11 @@ if( date('F') != 'August' ){
  * standard if else with {}
  *
  * if ( condition ){
- *      true
- * } else  {
- *      false
+ *      result
+ * } else if ( condition ) {
+ *      result
+ * } else {
+ *      failed both conditions
  * }
  *
 */
