@@ -53,6 +53,29 @@ if( date('F') != 'August' ){
 }
 ?>
 
+<h4>If Else / Else if: </h4>
+<?php
+/*
+ * standard if else with {}
+ *
+ * if ( condition ){
+ *      true
+ * } else  {
+ *      false
+ * }
+ *
+*/
+if( date('F') == 'August' ){
+    echo '<p>If, month is August</p>';
+
+} else if( date('F') == 'July' ){
+    echo '<p>Else if, month is July.</p>';
+
+} else {
+    echo '<p>Else, month is not August or July.</p>';
+}
+?>
+
 
 <h4>Ternary If Else: </h4>
 <?php
