@@ -32,7 +32,7 @@ if( $_SESSION['form-errors'] )
     </div>
 
     <div class="form-row">
-        <label for="first-name">Last Name:</label>
+        <label for="last-name-name">Last Name:</label>
         <input type="text" value="<?= (isset($formErrors['last-name']))?  $formData['last-name'] : '' ?>" id="last-name" name="last-name" >
         <?php if( isset($formErrors['last-name']) ): ?>
             <p style="color: red; font-weight: bold"><?= $formErrors['last-name'] ?></p>
