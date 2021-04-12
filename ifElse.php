@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>If Else Examples</title>
+    <title>If Else Examples - changes</title>
 </head>
 <body>
 <h4>Inline If: </h4>

@@ -1,3 +1,7 @@
+<?php
+$hello = "hello";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +14,11 @@
     <title>WEB2603 - Your Name</title>
 </head>
 <body>
+
+<?php
+echo $hello;
+?>
+
     <h1>Project List</h1>
     <!-- organized and clearly labeled working hyperlinks to your individual project assignment pages. -->
     <ul>
