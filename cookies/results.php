@@ -15,6 +15,7 @@ if( $isValid === true ){
     setcookie('form-errors',serialize($isValid));
 
     header('Location: form.php');
+    exit;
 }
 /**
  * Returns true if valid else array containing what inputs failed validation
@@ -27,7 +28,6 @@ function isValid($formData)
     $isValid = true;
 
     if( strlen($formData['first-name']) <= 4 || strlen($formData['first-name']) >= 20 ){
-        var_dump('error');
         $isValid = ['first-name' => 'First name length is not valid, must be between 4 and 20 characters long'];
     }
 
