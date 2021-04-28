@@ -15,14 +15,14 @@ function getCustomerDetails($id)
 
     $servername = "web2603.chrisgoode.me";
     $username = "web2603_student";
-    $password = "?DhHCq#9TR";
+    $password = "";
 
     try {
         $dbConnection = new PDO("mysql:host=$servername;dbname=web2603", $username, $password);
         // set the PDO error mode to exception
         $dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch(PDOException $e) {
-        echo "Connection failed: " . $e->getMessage();
+        die( "Connection failed: " . $e->getMessage() );
     }
 
     // raw query
@@ -41,8 +41,6 @@ function getCustomerDetails($id)
     return $stmt->fetch();
 
 }
-
-
 ?>
 
 <html lang="en">
